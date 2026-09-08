@@ -19,6 +19,18 @@ app.get('/', (req, res) => {
     res.render('index');
 });
 
+// GET route about
+
+app.get('/about', (req, res) => {
+    res.render('about');
+});
+
+// GET route calendar
+
+app.get('/calendar', (req, res) => {
+    res.render('calendar');
+});
+
 app.listen(HTTP_PORT, () => {
     console.log(`Server is running on port ${HTTP_PORT}`);
 });
