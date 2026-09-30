@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.engine('.hbs', exphbs.engine({ extname: '.hbs' }));
 
 app.set('view engine', '.hbs');
+app.set('views', path.join(__dirname, 'views'));
 
 // GET route index
 
